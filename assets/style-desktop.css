@@ -1,0 +1,45 @@
+.title-text {
+  font-size: 2.5em;
+}
+
+.nav-text {
+  font-size: 1.5em;
+}
+
+#header-div, .content-div {
+  width: 90vw;
+}
+
+#header-div {
+  padding-top: 1em;
+}
+
+.thumb-container {
+  height: 12vw;
+  width: 12vw;
+}
+
+#gallery-div {
+  text-align: left;
+}
+
+#mobile-nav-div {
+  display: none;
+}
+
+#desktop-nav-div {
+  display: block;
+  width: 100%;
+}
+
+#about-me-td {
+  display: block;
+}
+
+#contact-form {
+  width: 25em;
+}
+
+#contact-form-title {
+  font-size: 2em;
+}
