@@ -228,6 +228,8 @@ a:hover {
 
 #contact-form input, textarea, button {
   font-family: "Quattrocento Sans", sans-serif;
+  border-radius: 0;
+  -webkit-appearance: none;
 }
 
 .contact-input {
