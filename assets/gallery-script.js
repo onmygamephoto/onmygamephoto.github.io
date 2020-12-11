@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 $.ajax({
   type: "GET",
-  url: "https://raw.githubusercontent.com/onmygamephoto/onmygamephoto.github.io/main/assets/gallery-info.csv",
+  url: "gallery-info.csv",
   // url: "https://raw.githubusercontent.com/dlansigan/test-csv/main/gallery-info.csv?token=AD37W4Y7LJLDJBIWXLJUO4S73ORUU",
   async: false,
   dataType: "text",
