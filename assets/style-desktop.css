@@ -19,6 +19,10 @@
   width: 22vw;
 }
 
+.subsec-header-text {
+  font-size: 2em;
+}
+
 #mobile-nav-div {
   display: none;
 }
