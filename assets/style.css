@@ -71,7 +71,7 @@ a:hover {
 }
 
 .subsec-header-text {
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: center;
   font-family: 'Fredoka One', cursive;
   padding-bottom: 0.25em;
@@ -118,7 +118,7 @@ a:hover {
 }
 
 .content-div {
-  width: 80vw;
+  width: 90vw;
   text-align: center;
   margin: auto;
   background: rgba(255, 255, 255, 0);
@@ -135,11 +135,13 @@ a:hover {
 }
 
 .thumb-container {
-    height: 30vw;
-    width: 30vw;
+    height: 25vw;
+    width: 25vw;
     display: table-cell;
     overflow: hidden;
     border: 3pt var(--accent3) solid;
+    box-sizing: border-box;
+    padding: 0;
 }
 
 .light-img-div {
