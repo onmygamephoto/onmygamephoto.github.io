@@ -135,8 +135,8 @@ a:hover {
 }
 
 .thumb-container {
-    height: 25vw;
-    width: 25vw;
+    height: 5em;
+    width: 5em;
     display: table-cell;
     overflow: hidden;
     border: 3pt var(--accent3) solid;
