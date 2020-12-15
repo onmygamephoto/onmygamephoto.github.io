@@ -453,7 +453,7 @@ div::-webkit-scrollbar-thumb:hover {
   height: 60%;
   width: 50%;
   background: var(--main);
-  border: 2pt solid var(--accent3);
+  border: 1pt solid var(--accent3);
   color: var(--accent2);
   padding: 10% 1em;
   overflow: hidden;
@@ -468,7 +468,7 @@ div::-webkit-scrollbar-thumb:hover {
   background-image: url('site-images/splash-bg-1.jpg');
   background-position: center;
   background-size: cover;
-  border: 2pt solid var(--accent3);
+  border: 1pt solid var(--accent3);
 }
 #box-2 {
   display: table-cell;
@@ -479,7 +479,7 @@ div::-webkit-scrollbar-thumb:hover {
   background-image: url('site-images/splash-bg-2.jpg');
   background-position: top;
   background-size: cover;
-  border: 2pt solid var(--accent3);
+  border: 1pt solid var(--accent3);
 }
 #box-3 {
   display: table-cell;
@@ -490,7 +490,7 @@ div::-webkit-scrollbar-thumb:hover {
   background-image: url('site-images/splash-bg-3.jpg');
   background-position: top;
   background-size: cover;
-  border: 2pt solid var(--accent3);
+  border: 1pt solid var(--accent3);
 }
 #box-4 {
   display: table-cell;
@@ -499,7 +499,7 @@ div::-webkit-scrollbar-thumb:hover {
   height: 40%;
   width: 25%;
   background: var(--main);
-  border: 2pt solid var(--accent3);
+  border: 1pt solid var(--accent3);
   font-size: 4.5vh;
   text-align: center;
 }
@@ -524,7 +524,7 @@ div::-webkit-scrollbar-thumb:hover {
   font-family: 'Fredoka One', cursive;
   font-size: 8vh;
   padding-bottom: 0.2em;
-  border-bottom: 3pt solid var(--accent1);
+  border-bottom: 2pt solid var(--accent1);
 }
 
 @media all and (max-width: 150vh) {

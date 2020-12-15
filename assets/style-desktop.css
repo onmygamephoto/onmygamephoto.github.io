@@ -55,3 +55,13 @@
 div::-webkit-scrollbar {
   height: 0.5em;
 }
+
+/* SPLASH */
+
+#splash-title-bottom {
+  border-bottom: 3pt solid var(--accent1);
+}
+
+#main-box, #box-1, #box-2, #box-3 {
+border: 2pt solid var(--accent3);
+}
