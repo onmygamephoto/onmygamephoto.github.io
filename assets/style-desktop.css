@@ -19,12 +19,12 @@
 }
 
 .subsec-div {
-  height: 10em;
+  height: 15em;
 }
 
 .thumb-container {
-  height: 10em;
-  width: 10em;
+  height: 15em;
+  width: 15em;
 }
 
 .subsec-header-cell {
@@ -50,4 +50,8 @@
 
 #contact-form-title {
   font-size: 2em;
+}
+
+div::-webkit-scrollbar {
+  height: 0.5em;
 }
