@@ -398,6 +398,7 @@ div::-webkit-scrollbar-track {
   /* border-radius: 10px; */
   /* background-color: var(--accent3); */
   background-color: rgba(0, 0, 0, 0);
+  -webkit-overflow-scrolling: touch;
 }
 div::-webkit-scrollbar {
   height: 0.5em;
