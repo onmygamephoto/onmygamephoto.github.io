@@ -5,7 +5,7 @@
 $(document).ready(function(){
 
   var footerDiv = document.getElementById("footer-div");
-  footerDiv.innerHTML = footerDiv.innerHTML + "<p>Website by Dana Lansigan</p><p>Photo gallery made with <a href='https://sachinchoolur.github.io/lightgallery.js/' tarbet='_blank'>lightgallery.js</a></p>"
+  footerDiv.innerHTML = footerDiv.innerHTML + "<p>Website by Dana Lansigan</p><p>Photo gallery made with <a href='https://sachinchoolur.github.io/lightgallery.js/' target='_blank'>lightgallery.js</a></p>"
 
   // $('body').addClass('stop-scrolling');
 
