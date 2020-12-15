@@ -96,7 +96,7 @@ a:hover {
   /* border-bottom-left-radius: 1em; */
   /* border-bottom-right-radius: 1em; */
   /* box-shadow: 0em 0em 0.5em rgba(0,0,0,0.5); */
-  border-bottom: 3pt solid var(--accent1);
+  border-bottom: 3pt solid var(--accent2);
   margin-top: -1em;
   /* margin-left: -1em; */
   padding: 1em;
@@ -354,7 +354,7 @@ a:hover {
   box-sizing: border-box;
   background: var(--main);
   color: var(--accent3);
-  border-top: 3pt solid var(--accent1);
+  border-top: 3pt solid var(--accent2);
   font-size: 0.6em;
   text-align: right;
   /* margin-top:5em; */
