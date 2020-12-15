@@ -4,8 +4,8 @@ $(document).ready(function(){
 
 $.ajax({
   type: "GET",
-  url: "assets/gallery-info.csv",
-  // url: "https://raw.githubusercontent.com/dlansigan/test-csv/main/gallery-info.csv?token=AD37W4Y7LJLDJBIWXLJUO4S73ORUU",
+  // url: "assets/gallery-info.csv",
+  url: "https://raw.githubusercontent.com/dlansigan/test-csv/main/gallery-info.csv?token=AD37W4Y7LJLDJBIWXLJUO4S73ORUU",
   async: false,
   dataType: "text",
   success: function(response)
@@ -26,7 +26,7 @@ function processCSV(data) {
   }
 
   for (var i = 0; i < subsecList.length; i++) {
-    galleryDiv.innerHTML = galleryDiv.innerHTML + "<center><div class='subsec-header-text'>" + subsecList[i] + "</div></center><div id='subsec-div-" + i + "'></div>";
+    galleryDiv.innerHTML = galleryDiv.innerHTML + "<table class='subsec-table'><tr><td class='subsec-header-cell'><div class='subsec-header-div'>" + subsecList[i] + "</div></td></tr><tr><td class='subsec-cell'><div id='subsec-div-" + i + "' class='subsec-div'></div></td></tr></table>";
   }
 
   for (var i = 0; i < data.length; i++) {

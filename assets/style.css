@@ -1,7 +1,14 @@
-:root {
+/* :root {
   --main:#222831;
   --accent1:#393e46;
   --accent2:#00adb5;
+  --accent3:#eeeeee;
+} */
+
+:root {
+  --main:#222831;
+  --accent1:#5f6769;
+  --accent2:#719192;
   --accent3:#eeeeee;
 }
 
@@ -13,6 +20,11 @@ body {
   font-size: 14pt;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+div {
+  box-sizing: border-box;
 }
 
 /* #overlay {
@@ -70,43 +82,34 @@ a:hover {
   /* font-family: 'Baloo Da 2', cursive; */
 }
 
-.subsec-header-text {
-  font-size: 1.5em;
-  text-align: center;
-  font-family: 'Fredoka One', cursive;
-  padding-bottom: 0.25em;
-  padding-top: 0.25em;
-  padding-left: 0.25em;
-  padding-right: 0.25em;
-  border-bottom: 3pt solid var(--accent1);
-  border-top: 3pt solid var(--accent1);
-  margin-top: 1em;
-  margin-bottom: 1em;
-  /* background: rgba(0, 0, 0, 0.5); */
-  /* box-shadow: 0em 0em 0.5em rgba(0,0,0,0.5); */
-  display: inline-block;
-  color: var(--main);
+.title-text a:hover {
+  border:0;
 }
 
 #header-div{
   font-size: 1em;
   color: var(--accent3);
-  margin: auto;
-  width: 80vw;
+  /* margin: auto; */
+  width: 100vw;
   /* margin-bottom: 2em;   */
   background: var(--main);
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
-  box-shadow: 0em 0em 0.5em rgba(0,0,0,0.5);
-  /* border-bottom: 16pt solid var(--accent1); */
+  /* border-bottom-left-radius: 1em; */
+  /* border-bottom-right-radius: 1em; */
+  /* box-shadow: 0em 0em 0.5em rgba(0,0,0,0.5); */
+  border-bottom: 3pt solid var(--accent1);
   margin-top: -1em;
   /* margin-left: -1em; */
   padding: 1em;
   padding-top:1.5em;
+  box-sizing: border-box;
+  padding-right: 1.5em;
 }
 
 #header-table{
   width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 #gallery-div {
@@ -134,14 +137,76 @@ a:hover {
   box-sizing: border-box;
 }
 
+.subsec-table {
+  /* height: 5em; */
+  width: 100%;
+  /* table-layout: fixed; */
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+.subsec-header-cell {
+  /* height: 1em; */
+  width: 5em;
+  font-size: 14pt;
+  text-align: center;
+  vertical-align: middle;
+  /* font-family: 'Fredoka One', cursive; */
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: bold;
+  color: var(--main);
+  box-sizing: border-box;
+  /* background: var(--accent2); */
+  border-right: 3pt solid var(--accent3);
+}
+
+.subsec-header-div {
+  display: inline-block;
+  border-bottom: 3pt solid var(--accent2);
+  margin-bottom: 0.25em;
+}
+
+.subsec-cell {
+  font-size: 14pt;
+  table-layout: auto;
+  /* display: table-cell; */
+  /* width: 70%; */
+  height: 5em;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0 3pt var(--accent1) solid;
+  /* border: 3pt solid black; */
+  /* float: left; */
+  white-space: nowrap;
+}
+
+.subsec-div {
+  /* font-size: 14pt; */
+  width: 100%;
+  height: 5em;
+  overflow-x: overlay;
+  overflow-y: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* text-align: center; */
+}
+
+
 .thumb-container {
-    height: 5em;
-    width: 5em;
-    display: table-cell;
-    overflow: hidden;
-    border: 3pt var(--accent3) solid;
-    box-sizing: border-box;
-    padding: 0;
+  font-size: 14pt;
+  height: 5em;
+  width: 5em;
+  display: table-cell;
+  overflow: hidden;
+  border-right: 3pt var(--accent3) solid;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* float: left; */
 }
 
 .light-img-div {
@@ -154,6 +219,9 @@ a:hover {
   -webkit-transition: all 1s;
   transition: all 1s;
   padding-right: 3pt;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .light-img-div:hover {
@@ -284,12 +352,12 @@ a:hover {
 #footer-div {
   width: 100%;
   box-sizing: border-box;
-  background: var(--accent1);
+  background: var(--main);
   color: var(--accent3);
-  border-top: 3pt solid var(--main);
+  border-top: 3pt solid var(--accent1);
   font-size: 0.6em;
   text-align: right;
-  margin-top:5em;
+  /* margin-top:5em; */
   padding-right: 1em;
   padding-top: 0.25em;
   padding-bottom: 0.25em;
@@ -324,6 +392,36 @@ a:hover {
   overflow: hidden;
 }
 
+
+div::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+  /* border-radius: 10px; */
+  /* background-color: var(--accent3); */
+  background-color: rgba(0, 0, 0, 0);
+}
+div::-webkit-scrollbar {
+  height: 0.5em;
+  /* background-color: var(--accent3); */
+  border:0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+div::-webkit-scrollbar-thumb {
+  /* border-radius: 10px; */
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3); */
+  background-color: var(--accent2);
+  /* transition: all 0.5s;
+  -webkit-transition: all 0.5s; */
+}
+
+div::-webkit-scrollbar-thumb:active{
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .5);
+  background-color: var(--accent2);
+}
+
+div::-webkit-scrollbar-thumb:hover {
+  /* border: 1pt solid var(--accent1); */
+}
 /* SPLASH */
 
 #wrapper-wrapper {
