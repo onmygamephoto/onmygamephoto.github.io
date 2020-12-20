@@ -241,7 +241,7 @@ a:hover {
   width: 30vw;
   height: 30vw;
   border-radius: 100%;
-  border: 3pt solid var(--accent2);
+  /* border: 3pt solid var(--accent2); */
   background-size: cover;
   background-position: center;
 }
