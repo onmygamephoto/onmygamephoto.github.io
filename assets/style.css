@@ -500,7 +500,7 @@ div::-webkit-scrollbar-thumb:hover {
 }
 #box-2-img-1 {
   background-image: url('site-images/splash-bg-2-1.jpg');
-  background-position: top;
+  background-position: center;
   background-size: cover;
 }
 #box-2-img-2 {
