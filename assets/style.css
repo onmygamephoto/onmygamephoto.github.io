@@ -12,6 +12,14 @@
   --accent3:#eeeeee;
 }
 
+
+/* :root {
+  --main:#222831;
+  --accent1:#30475e;
+  --accent2:#719192;
+  --accent3:#ececec;
+} */
+
 body {
   font-family: 'Quattrocento Sans', sans-serif;
   color: var(--main);
