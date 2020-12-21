@@ -9,6 +9,7 @@
   --main:#222831;
   --accent1:#5f6769;
   --accent2:#719192;
+  --accent2-50:#71919250;
   --accent3:#eeeeee;
 }
 
@@ -126,12 +127,12 @@ a:hover {
 }
 
 #gallery-subsecs-div {
-  /* height: 1em; */
+  height: 3em;
   min-height: 0;
   text-align: center;
   overflow-x: auto;
   white-space: nowrap;
-  padding-bottom: 0.5em;
+  padding: 0.5em;
 }
 
 .content-div i {
@@ -176,26 +177,27 @@ a:hover {
   /* background: var(--accent2); */
   /* border-right: 3pt solid var(--accent3); */
   display: inline;
-  /* padding: 0.2em 0.5em; */
+  padding: 0.2em 0.5em;
   margin: 0 0.5em;
   -moz-transition: all 1s;
   -webkit-transition: all 1s;
   transition: all 1s;
   color: var(--accent2);
-  /* border-radius: 0.25em; */
-  /* border: 2pt solid var(--accent2); */
+  border-radius: 0.25em;
+  border: 2pt solid var(--accent3);
 }
 
 .subsec-header-div:hover {
   color: var(--main);
-  /* background: var(--accent2); */
-  border-bottom: 3pt solid var(--accent2);
+  background: var(--accent2-50);
+  /* border-bottom: 3pt solid var(--accent2); */
   cursor: pointer;
 }
 
 .subsec-header-div-active {
   color: var(--main);
-  border-bottom: 3pt solid var(--accent2);
+  background: var(--accent2-50);
+  /* border-bottom: 3pt solid var(--accent2); */
   cursor: pointer;
 }
 
