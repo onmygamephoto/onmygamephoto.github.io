@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 });
 
-var activeGallery=-1;
+var activeGallery=0;
 
 $.ajax({
   type: "GET",
@@ -47,9 +47,14 @@ function processCSV(data) {
   for (var i = 0; i < subsecList.length; i++) {
     $("body").append("<script>lightGallery(document.getElementById('subsec-div-"+i+"'));</script>");
 
-    var cell = document.getElementById('subsec-div-'+i);
-    $(cell).hide();
+    if (i>0) {
+      var cell = document.getElementById('subsec-div-'+i);
+      $(cell).hide();
+    }
+
   }
+
+  $("#subsec-header-0").addClass('subsec-header-div-active');
 
   $('[id^="subsec-header"]').each(function () {
     $(this).click(function () {
@@ -57,9 +62,9 @@ function processCSV(data) {
 
         if (activeGallery!=-1) {
           if (activeGallery == id) {
-            $("#subsec-div-" + activeGallery).fadeOut(500);
-            $("#subsec-header-" + activeGallery).removeClass('subsec-header-div-active');
-            activeGallery = -1;
+            // $("#subsec-div-" + activeGallery).fadeOut(500);
+            // $("#subsec-header-" + activeGallery).removeClass('subsec-header-div-active');
+            // activeGallery = -1;
           } else {
             $("#subsec-div-" + activeGallery).fadeOut(500);
             $("#subsec-header-" + activeGallery).removeClass('subsec-header-div-active');
