@@ -395,6 +395,64 @@ a:hover {
 
 }
 
+/** XMAS LETTER -- REMOVE AFTER XMAS **/
+
+#xmas-letter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background: var(--accent3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+#xmas-letter-text {
+  padding: 1em;
+  color: var(--main);
+  text-align: left;
+  width: 75%;
+  height: 90%;
+  overflow-y: auto;
+  line-height: 2em;
+}
+
+#xmas-letter-text h2 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2em;
+  text-align: center;
+}
+
+#open-website-button {
+  border: none;
+  background: var(--accent2);
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 1em;
+  padding: 0.2em 0.5em;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  box-sizing: border-box;
+  border: 2pt solid var(--main);
+  color: var(--accent3);
+  font-weight: bold;
+  text-align: center;
+  width: 10em;
+}
+
+#open-website-button:hover,#open-website-button:focus,#open-website-button:active {
+  background: var(--main);
+  border: 2pt solid var(--main);
+  color: var(--accent3);
+  cursor: pointer;
+}
+
+/** XMAS LETTER -- END **/
+
 .stop-scrolling {
   height: 100%;
   overflow: hidden;

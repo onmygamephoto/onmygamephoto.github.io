@@ -65,3 +65,17 @@ div::-webkit-scrollbar {
 #main-box, #box-1, #box-2, #box-3 {
 border: 2pt solid var(--accent3);
 }
+
+
+#xmas-letter-text {
+  width: 50%;
+  height: 90%;
+}
+
+#xmas-letter-text h2 {
+  font-size: 3em;
+}
+
+#open-website-button {
+  width: 20em;
+}
