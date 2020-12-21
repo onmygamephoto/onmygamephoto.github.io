@@ -46,13 +46,13 @@ int main(int argc)
 
     FILE *fp;
     char *filename;
-    filename="gallery-info.csv";
+    filename="gallery-info-new.csv";
     fp=fopen(filename,"w+");
     fprintf(fp,"subsec,filename,title,description");
     printf("\n%sfile created \n",filename);
 
     char subsec[255];
-    get_dir_content("images", fp, subsec);
+    get_dir_content("gallery-images", fp, subsec);
 
     fclose(fp);
 

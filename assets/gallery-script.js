@@ -2,10 +2,12 @@ $(document).ready(function(){
 
 });
 
+var activeGallery=-1;
+
 $.ajax({
   type: "GET",
-  url: "assets/gallery-info.csv",
-  // url: "https://raw.githubusercontent.com/dlansigan/test-csv/main/gallery-info.csv?token=AD37W4Y7LJLDJBIWXLJUO4S73ORUU",
+  // url: "assets/gallery-info.csv",
+  url: "https://raw.githubusercontent.com/onmygamephoto/onmygamephoto.github.io/main/assets/gallery-info.csv",
   async: false,
   dataType: "text",
   success: function(response)
@@ -17,6 +19,7 @@ $.ajax({
 
 function processCSV(data) {
   var galleryDiv = document.getElementById("gallery-div");
+  var gallerySubsecsDiv = document.getElementById("gallery-subsecs-div");
   var subsecList = [];
 
   for (var i = 0; i < data.length; i++) {
@@ -26,7 +29,8 @@ function processCSV(data) {
   }
 
   for (var i = 0; i < subsecList.length; i++) {
-    galleryDiv.innerHTML = galleryDiv.innerHTML + "<table class='subsec-table'><tr><td class='subsec-header-cell'><div class='subsec-header-div'>" + subsecList[i] + "</div></td></tr><tr><td class='subsec-cell'><div id='subsec-div-" + i + "' class='subsec-div'></div></td></tr></table>";
+    gallerySubsecsDiv.innerHTML = gallerySubsecsDiv.innerHTML +"<div class='subsec-header-div' id='subsec-header-" + i + "'>" + subsecList[i] + "</div>";
+    galleryDiv.innerHTML = galleryDiv.innerHTML + "<div class='subsec-div' id='subsec-div-" + i + "'></div>";
   }
 
   for (var i = 0; i < data.length; i++) {
@@ -42,7 +46,36 @@ function processCSV(data) {
 
   for (var i = 0; i < subsecList.length; i++) {
     $("body").append("<script>lightGallery(document.getElementById('subsec-div-"+i+"'));</script>");
+
+    var cell = document.getElementById('subsec-div-'+i);
+    $(cell).hide();
   }
 
-  var getElementByCla
+  $('[id^="subsec-header"]').each(function () {
+    $(this).click(function () {
+        var id = this.id.replace(/[^\d]/g, '');
+
+        if (activeGallery!=-1) {
+          if (activeGallery == id) {
+            $("#subsec-div-" + activeGallery).fadeOut(500);
+            $("#subsec-header-" + activeGallery).removeClass('subsec-header-div-active');
+            activeGallery = -1;
+          } else {
+            $("#subsec-div-" + activeGallery).fadeOut(500);
+            $("#subsec-header-" + activeGallery).removeClass('subsec-header-div-active');
+            $("#subsec-div-" + id).delay(500).fadeIn(500);
+            $("#subsec-header-" + id).addClass('subsec-header-div-active');
+            activeGallery = id;
+          }
+        } else{
+          $("#subsec-div-" + id).fadeIn(500);
+          $("#subsec-header-" + id).addClass('subsec-header-div-active');
+          activeGallery = id;
+
+        }
+
+    });
+});
+
+
 }

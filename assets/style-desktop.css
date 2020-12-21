@@ -18,17 +18,17 @@
   padding-top: 1.5em;
 }
 
-.subsec-div {
-  height: 15em;
-}
-
 .thumb-container {
-  height: 15em;
-  width: 15em;
+  /* height: 15em;
+  width: 15em; */
+  height: 40vw;
+  width: 40vw;
 }
 
-.subsec-header-cell {
-  font-size: 28pt;
+.subsec-header-div {
+  font-size: 1.5em;
+  margin: 0 1em;
+  display: inline;
 }
 
 #mobile-nav-div {

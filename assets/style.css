@@ -122,6 +122,16 @@ a:hover {
 
 #gallery-div {
   text-align: center;
+  position: relative;
+}
+
+#gallery-subsecs-div {
+  /* height: 1em; */
+  min-height: 0;
+  text-align: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 0.5em;
 }
 
 .content-div i {
@@ -145,18 +155,17 @@ a:hover {
   box-sizing: border-box;
 }
 
-.subsec-table {
-  /* height: 5em; */
+/* .subsec-container {
   width: 100%;
-  /* table-layout: fixed; */
-  border-collapse: collapse;
   margin-bottom: 1em;
-}
+  position: relative;
+} */
 
-.subsec-header-cell {
+.subsec-header-div {
   /* height: 1em; */
-  width: 5em;
-  font-size: 14pt;
+  /* width: 5em; */
+  position: relative;
+  font-size: 1.5em;
   text-align: center;
   vertical-align: middle;
   /* font-family: 'Fredoka One', cursive; */
@@ -165,52 +174,56 @@ a:hover {
   color: var(--main);
   box-sizing: border-box;
   /* background: var(--accent2); */
-  border-right: 3pt solid var(--accent3);
+  /* border-right: 3pt solid var(--accent3); */
+  display: inline;
+  /* padding: 0.2em 0.5em; */
+  margin: 0 0.5em;
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  color: var(--accent2);
+  /* border-radius: 0.25em; */
+  /* border: 2pt solid var(--accent2); */
 }
 
-.subsec-header-div {
-  display: inline-block;
+.subsec-header-div:hover {
+  color: var(--main);
+  /* background: var(--accent2); */
   border-bottom: 3pt solid var(--accent2);
-  margin-bottom: 0.25em;
+  cursor: pointer;
 }
 
-.subsec-cell {
+.subsec-header-div-active {
+  color: var(--main);
+  border-bottom: 3pt solid var(--accent2);
+  cursor: pointer;
+}
+
+.subsec-div {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
   font-size: 14pt;
-  table-layout: auto;
-  /* display: table-cell; */
-  /* width: 70%; */
-  height: 7em;
   text-align: left;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   border: 0 3pt var(--accent1) solid;
-  /* border: 3pt solid black; */
-  /* float: left; */
-  white-space: nowrap;
-}
-
-.subsec-div {
-  /* font-size: 14pt; */
+  text-align: center;
   width: 100%;
-  height: 7em;
-  overflow-x: overlay;
-  overflow-y: hidden;
-  white-space: nowrap;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  /* text-align: center; */
+  /* height: 5em; */
 }
-
 
 .thumb-container {
   font-size: 14pt;
-  height: 7em;
-  width: 7em;
+  /* height: 7em; */
+  /* width: 7em; */
+  height: 90vw;
+  width: 90vw;
   display: table-cell;
   overflow: hidden;
-  border-right: 3pt var(--accent3) solid;
+  /* border-right: 3pt var(--accent3) solid; */
+  border: 3pt var(--accent3) solid;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -466,6 +479,7 @@ div::-webkit-scrollbar-track {
   -webkit-overflow-scrolling: touch;
 }
 div::-webkit-scrollbar {
+  -webkit-overflow-scrolling: auto;
   -webkit-appearance: none;
   height: 0.25em;
   /* background-color: var(--accent3); */
