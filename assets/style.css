@@ -22,6 +22,11 @@
   --accent3:#ececec;
 } */
 
+html {
+
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Quattrocento Sans', sans-serif;
   color: var(--main);
@@ -466,6 +471,10 @@ a:hover {
   border: 2pt solid var(--main);
   color: var(--accent3);
   cursor: pointer;
+}
+
+#top-button a:hover {
+  color: var(--main)
 }
 
 /** XMAS LETTER -- END **/
