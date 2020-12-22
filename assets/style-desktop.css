@@ -41,8 +41,8 @@
 }
 
 #about-me-img {
-  width: 17em;
-  height: 17em;
+  width: 20em;
+  height: 20em;
 }
 #about-header-text {
   font-size: 3em;
@@ -54,6 +54,11 @@
 
 #about-me-td-desktop {
   display: block;
+}
+
+#about-me-table {
+  width: 60%;
+  margin: auto;
 }
 
 #contact-form {
