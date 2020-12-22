@@ -268,20 +268,20 @@ a:hover {
 
 #about-me-img {
   background: url('site-images/me.jpg');
-  width: 30vw;
-  height: 30vw;
+  width: 15em;
+  height: 15em;
   border-radius: 100%;
   /* border: 3pt solid var(--accent2); */
   background-size: cover;
   background-position: center;
 }
 
-#about-me-td {
+/* #about-me-td {
   display: none;
-}
+} */
 
 #about-header-text {
-  font-size: 3em;
+  font-size: 2.5em;
   font-family: 'Fredoka One', cursive;
 }
 

@@ -40,8 +40,12 @@
   width: 100%;
 }
 
-#about-me-td {
-  display: block;
+#about-me-img {
+  width: 17em;
+  height: 17em;
+}
+#about-header-text {
+  font-size: 3em;
 }
 
 #contact-form {
