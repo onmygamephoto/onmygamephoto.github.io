@@ -20,3 +20,11 @@
 #about-header-text {
   font-size: 2em;
 }
+
+#about-me-td {
+  display: none;
+}
+
+#about-me-td-desktop {
+  display: block;
+}

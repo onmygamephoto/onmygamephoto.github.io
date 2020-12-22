@@ -48,6 +48,14 @@
   font-size: 3em;
 }
 
+#about-me-td {
+  display: none;
+}
+
+#about-me-td-desktop {
+  display: block;
+}
+
 #contact-form {
   width: 25em;
 }

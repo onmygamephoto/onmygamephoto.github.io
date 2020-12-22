@@ -276,9 +276,13 @@ a:hover {
   background-position: center;
 }
 
-/* #about-me-td {
+#about-me-td-desktop {
   display: none;
-} */
+}
+
+#about-me-td {
+  display: block;
+}
 
 #about-header-text {
   font-size: 2.5em;
