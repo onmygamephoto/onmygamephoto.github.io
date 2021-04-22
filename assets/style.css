@@ -649,12 +649,12 @@ div::-webkit-scrollbar-button:single-button:horizontal:increment:active,div::-we
 }
 #box-3-img-1 {
   background-image: url('site-images/splash-bg-3-1.jpg');
-  background-position: top;
+  background-position: center;
   background-size: cover;
 }
 #box-3-img-2 {
   background-image: url('site-images/splash-bg-3-2.jpg');
-  background-position: top;
+  background-position: bottom;
   background-size: cover;
 }
 #box-3-img-3 {
