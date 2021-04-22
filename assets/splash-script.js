@@ -6,8 +6,8 @@ var timer1;
 // var timer3;
 
  $(document).ready(function () {
-   // var overlay = document.getElementById("overlay");
-   // $(overlay).delay(800).fadeOut(1500);
+   var overlay = document.getElementById("overlay");
+   $(overlay).delay(800).fadeOut(1500);
 
 
    $('#box-1 .carousel-img:gt(0)').hide(); // to hide all but the first image when page loads
@@ -30,16 +30,16 @@ var timer1;
      }}, 5000);
    };
 
-   // timer1();
+   timer1();
 
 
-   var xmasLetter = document.getElementById("xmas-letter");
-   var openButton = document.getElementById("open-website-button");
-   $(openButton).click(function(){
-     $(xmasLetter).fadeOut(1500);
-     var overlay = document.getElementById("overlay");
-     $(overlay).delay(2300).fadeOut(1500);
-
-     timer1();
-   });
+   // var xmasLetter = document.getElementById("xmas-letter");
+   // var openButton = document.getElementById("open-website-button");
+   // $(openButton).click(function(){
+   //   $(xmasLetter).fadeOut(1500);
+   //   var overlay = document.getElementById("overlay");
+   //   $(overlay).delay(2300).fadeOut(1500);
+   //
+   //   timer1();
+   // });
  });
